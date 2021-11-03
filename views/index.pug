@@ -5,11 +5,9 @@ block content
   p I did changes to this index pug file.
   button(type='button', class='btn btn-primary' onClick='update()') Press ME
   div(id='target') Display 
-  script(type='text/javascript'),
-  let client-count=0;
-  function update()
-  {
-    client_count=client_count +1
-    document.getElemenetByID('target').innerHTML=client_count
-  };
-  a(href='canteen')canteen
+  script(type='text/javascript').
+    let client_count=0;
+    function update(){
+      client_count=client_count +1
+      document.getElementById('target').innerHTML=client_count
+    };
